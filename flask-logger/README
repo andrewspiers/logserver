@@ -1,0 +1,19 @@
+flask-loggger: A server that logs requests,
+ideally the headers, cookies, and body of requests.
+
+TO BUILD:
+docker build -t 'flask_logger' .
+
+RUN:
+docker run -d -p8001:8000 jrd mod_wsgi-express start-server --user www-data --group www-data --log-to-terminal wsgi.py
+
+
+
+
+inspiration:
+https://stackoverflow.com/a/44013423/37176
+
+flask documentation  http://flask.pocoo.org/docs/1.0/
+flask request object http://flask.pocoo.org/docs/1.0/api/#incoming-request-data
+
+catch all url: http://flask.pocoo.org/snippets/57/
